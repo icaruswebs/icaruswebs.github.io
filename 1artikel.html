@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link type="image/png" href="img/8-bit-megumin.jpg" rel="icon">
+      <title>Blogger</title>
+      <style type="text/css">
+      * {
+         box-sizing: border-box;
+      }
+      html, body {
+         margin: 0;
+         padding: 0;
+         font-family:Arial,sans-serif;
+         background: linear-gradient(#9932CC, #5F9EA0, #00BFFF, #9932CC) ;
+      }
+      #content::after {
+         content: "";
+         display: block;
+         clear: both;
+      }
+      [class*="col-"] {
+         width: 100%;
+         float: left;
+      }
+      @media only screen and (min-width: 480px) {
+         .col-md-1 { width: 8.33333333% }
+         .col-md-2 { width: 16.66666667% }
+         .col-md-3 { width: 25% }
+         .col-md-4 { width: 33.33333333% }
+         .col-md-5 { width: 41.66666667% }
+         .col-md-6 { width: 50% }
+         .col-md-7 { width: 58.33333333% }
+         .col-md-8 { width: 66.66666667% }
+         .col-md-9 { width: 75% }
+         .col-md-10 { width: 83.33333333% }
+         .col-md-11 { width: 91.66666667% }
+         .col-md-12 { width: 100% }
+      }
+      @media only screen and (min-width: 768px) {
+         .col-l-1 { width: 8.33333333% }
+         .col-l-2 { width: 16.66666667% }
+         .col-l-3 { width: 40% }
+         .col-l-4 { width: 33.33333333% }
+         .col-l-5 { width: 41.66666667% }
+         .col-l-6 { width: 60% }
+         .col-l-7 { width: 58.33333333% }
+         .col-l-8 { width: 66.66666667% }
+         .col-l-9 { width: 75% }
+         .col-l-10 { width: 83.33333333% }
+         .col-l-11 { width: 91.66666667% }
+         .col-l-12 { width: 100% }
+      }
+      /* design the layout */
+      footer {
+         color: white;
+         padding: 15px;
+      }
+      .main, .aside {
+         padding: 15px;
+      }
+      .main > article {
+         text-align: left;
+         background: white;
+         padding: 10px;
+         border: 1px solid black;
+      }
+      .aside > aside {
+         background: #89C3D0;
+         border: 1px solid black;
+         border-radius: 5px;
+         padding: 15px;
+      }
+      header {
+         background: black;
+      }
+      footer {
+         background: #333333;
+      }
+      
+     
+       .overlay {
+       height: 0%;
+       width: 100%;
+       position: fixed;
+       z-index: 1;
+       top: 0;
+       left: 0;
+       background-color: rgb(0,0,0);
+       background-color: rgba(0,0,0,0.9);
+       overflow-y: hidden;
+       transition: 0.5s;
+       }
+       
+       .overlay-content {
+       position: relative;
+       top: 25%;
+       width: 100%;
+       text-align: center;
+       margin-top: 30px;
+       }
+       
+       .overlay a {
+       padding: 8px;
+       text-decoration: none;
+       font-size: 30px;
+       color: #818181;
+       display: block;
+       transition: 0.3s;
+       }
+       
+       .overlay a:hover, .overlay a:focus {
+       color: #f1f1f1;
+       }
+       
+       .overlay .closebtn {
+       position: absolute;
+       top: 20px;
+       right: 45px;
+       font-size: 60px;
+       }
+       
+       @media screen and (max-height: 450px){
+       .overlay {overflow-y: auto;}
+       .overlay a {font-size: 20px}
+       .overlay .closebtn {
+       font-size: 40px;
+       top: 15px;
+       right: 35px;
+       }
+       }
+             
+      img {
+         max-width: 100%;
+         height: auto;
+
+      }
+      
+      #section {
+      padding: 15px;
+      color: white;
+      background: black;
+      }
+      
+      #p5 {
+         font-size: small;
+        }
+        
+        p {
+         font-family:fantasy ;
+         }
+        
+      a:link {
+        text-decoration: none;
+        }
+      a:visited {
+        text-decoration: none;
+        }
+
+   </style>
+</head>
+<body>
+   <header>
+      <img src="img/latarbelakang.jpg"/>
+  </header>
+  
+  <section id="section">
+      <nav>
+            <div id="nav" class="overlay">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <div class="overlay-content">
+               <a href="home.html">Home</a>
+               <a href="about.html">About</a>
+               <a href="contact.html">Contact</a>
+               <a href="terms.html">Terms of service</a>
+               <a href="privacy.html">Privacy policy</a>
+               <a href="disclaimer.html">Disclaimer</a>
+           </div>
+            </div>
+              <span style="font-size:30px;cursor:
+                pointer "onclick="openNav()">&#9776; Menu</span>
+      </nav>
+     </section>
+    
+   <main>
+    <div id="content">
+      <div class="col-md-9 col-l-6 main">
+       <article>
+        <center>
+         <h1> <p>Minecraft</p> </h1>
+          </center>
+         <p id="p5">> by Blog Xoupedia</p>
+         <p id="p5">> July 18, 2022</p>
+         <p id="p5">> Edukasi</p>
+      <hr>
+   <br>
+       <img src="img2/Minecraft_cover.png"/>
+         <p> <i><b>Minecraft</b></i> adalah sebuah permainan sandbox yang dikembangkan oleh pengembang permainan asal Swedia Mojang Studios. Permainan ini dibuat oleh Markus "Notch" Persson dalam bahasa pemrograman Java.
+          Setelah beberapa versi pengujian pribadi awal, permainan ini pertama kali diterbitkan pada Mei 2009 sebelum sepenuhnya dirilis pada November 2011, kemudian Jens "Jeb" Bergensten mengambil alih pengembangan. Permainan ini adalah salah satu yang terlaris sepanjang masa, terjual lebih dari 238 juta kali dan dengan lebih dari 140 juta pemain aktif bulanan.</p>
+          <p> Di <i>Minecraft</i>, pemain menjelajahi dunia 3D kotak-kotak dengan bioma Minecraft beragam yang dihasilkan secara prosedural, dan dapat menemukan dan membuat dari bahan baku, alat kerajinan, membangun struktur atau pekerjaan tanah, tergantung pada mode permainan, dapat melawan musuh yang dikendalikan oleh komputer, dan juga bekerja sama atau bersaing dengan pemain lain di dunia yang sama.
+           Mode permainan dalam Minecraft termasuk mode bertahan hidup, di mana pemain harus mendapatkan sumber daya untuk membangun dunia dan menjaga kesehatan, dan mode kreatif, di mana pemain memiliki sumber daya tanpa batas. Pemain dapat memodifikasi game dengan mod untuk membuat mekanisme, item, tekstur, add-ons, dan aset alur permainan baru.</p>
+            <p> Versi-versi awal permainan ini mendapat tanggapan secara positif, memenangkan beberapa penghargaan dan disebut sebagai salah satu permainan video terbaik yang pernah ada. Sosial media, parodi, adaptasi, barang dagangan, dan Minecon yang diselenggarakan tiap tahun memiliki peran besar dalam kepopuleran permainan ini. Minecraft juga digunakan dalam lingkungan edukasi untuk mengajarkan Kimia, CAD, dan ilmu komputer. Pada 2014, Mojang dan properti intelektual 
+             <i>Minecraft</i> dibeli Microsoft seharga US$2,5 miliar. Sejumlah game spin-off juga telah dikembangkan, seperti Minecraft: Story Mode, Minecraft Earth, dan Minecraft Dungeons.</p>
+       </article>
+       
+    <br>
+    
+       <article>
+        <center>
+         <h1> <p>Game Minecraft (Gameplay)</p> </h1>
+          </center>
+            <p> Game ini sebenarnya tidak memiliki objek khusus atau dengan kata lain tidak ada endingnya.
+                  Berbeda dengan kebanyakan game lain dengan tema open world dimana terdapat alur cerita yang dapat diikuti dan berkembang sesuai dengan lamanya permainan.</p>
+           <img src="img2/mine1.jpg"/>
+           <p> Walaupun demikian kamu dapat melakukan banyak hal, karena game satu ini memiliki berbagai hal yang membuatnya sangat kompleks. Kebanyakan player akan menghabiskan waktunya untuk membuat rumah atau kediaman khusus dengan berbagai perlengkapan, jebakan dan perabotan.</p>
+             <p> Bangunan yang dibangun cukup beragam dan beberapa diantaranya sangat indah. Namun, bangunan ini dapat dihancurkan oleh player lain yang iseng. Jadi, usahamu dapat hangus sia-sia karena hal ini.</p>
+              <p> Tapi, kamu bisa melakukan hal lain seperti explore dunia minecraft, mencari item ataupun mengalahkan monster dan lawan. Walaupun tampilannya sederhana game ini menyediakan berbagai area berbeda seprti gurun pasir, padang salju ataupun hutan. Jadi, kamu tidak akan bosan menjelajahi dunia minecraft.</p>
+       </article>
+       
+    <br>
+       
+       <article>
+        <center>
+         <h1> <p>Mobs</p> </h1>
+          </center>
+            <p> Makhluk hidup pada game minecraft dikenal dengan nama mobs. Setiap mobs memiliki ciri khas masing-masing, tapi terdapat dua pembagian dasar yaitu hostile (jinak) dan berbahaya.</p> 
+             <p> Hostile mobs hanya muncul pada siang hari sedangkan yang berbahaya biasanya muncul pada malam hari. Karena alasan inilah kamu harus membangun rumah untuk menghindari mobs-mobs berbahaya tersebut.</p> 
+              <p> Mobs jinak biasanya berupa NPC yang ada di desa, sapi, ayam atau hewan lainnya. Mobs seperti hewan ternak dapat diburu untuk diperoleh daging dan craft material. Makanan sangat dibutuhkan pada game ini karena terdapat health dan stamina bar yang dapat berkurang sewaktu-waktu.</p>
+                <p> Mobs berbahaya ini biasanya berupa zombie, slime, creeper, laba-laba dan lainnya. Mobs tipe ini sangat berbahaya karena jika terkena serangan terus menerus maka karakter yang kamu pakai akan cepat mati.</p>
+        
+        </article> 
+        
+        <br>
+        
+       <article>
+       <center>
+        <h1> <p>Dunia Pada Game Minecraft</p> </h1>
+       </center>
+         <p> Minecraft merupakan game yang memiliki tingkat kesulitan tersendiri. Karena itu dibutuhkan pengetahuan agar kamu dapat bertahan dan berhasil melewati berbagai dunia yang ada pada game ini.</p>
+          <img src="img2/nether-1024x577.jpg"/>
+           <p> Setidaknya terdapat tiga dunia pada minecraft yang harus kamu lewati jika ingin menuju area tertentu. Adapun dunia tersebut adalah:</p>
+   <br>      
+             <h3>Overworld</h3>
+            <p> Dunia satu ini merupakan dunia awal ketika baru memainkan game ini. Pada dunia kamu hanya memiliki tujuan untuk bertahan hidup dan menjelajahi overworld.</p>
+             <h3>Nether</h3>
+            <p> Dunia ini merupakan neraka versi minecraft. Nether atau dunia bawah/ neraka memiliki tantangan yang lebih tinggi dari overworld. Karena, mobs berbahaya dapat muncul kapan saja untuk menyerang.</p>
+             <h3>The End</h3>
+            <p> Dunia ini merupakan puncak kesulitan pada minecraft. Karena di dunia ini kamu dapat menghadapi Enderman ataupun Enderdragon (semacam boss dalam game). Setelah mengalahkan Enderdragon kamu bisa memilih untuk mengunjungi endcity, endship untuk memperoleh Elytra.</p>
+   <br>
+            <p> Memasuki dunia berikutnya tidaklah mudah, karena kamu harus mempersiapkan banyak hal seperti senjata, armor, persediaan dan item lainnya. Selain itu kamu harus menemukan spot tertentu untuk membangun rumah yang aman dari serangan mobs berbahaya.</p>          
+       </article>
+       
+   <br>    
+       
+       <article>
+                 <center>
+                  <h1> <p>Mode Permainan Game Minecraft</p></h1>
+                 </center>
+               <img src="img2/survive.jpg"/>
+                 <p> Selain dunia, game minecraft juga menyediakan berbagai mode yang dapat kamu mainkan. Setiap mode memiliki kriteria dan tingkat kesulitan tersendiri. Adapun mode yang ada adalah sebagai berikut:</p>
+               <ul>
+                 <li>
+                  <p> <b>Survival mode</b>, disini kamu bertujuan untuk bertahan hidup dengan mengumpulkan item, membuat senjata, armor dan bangunan pertahanan.</p></li>
+                 <li>
+                  <p> <b>Adventure Mode</b>, mode ini memiliki ciri khas dimana kamu hanya bisa menggunakan peralatan tertentu untuk menghancurkan sesuatu. Contohnya saja kapak untuk memotong kayu dan palu untuk menghancurkan batu.</p></li>
+                 <li>
+                  <p> <b>Hardcore Mode</b>, mode ini cukup ekstrem dimana karakter kamu hanya memiliki satu nyawa dan jika mati maka dunia yang ada akan dihapus.</p></li>
+                 <li>
+                  <p> <b>Creative Mode</b>, sesuai dengan namanya pada mode ini kamu dapat melakukan berbagai hal untuk crafting item sepuasnya. Karena itu kamu dapat membunuh mobs hewan dan memiliki item dalam jumlah tak terhingga.</p></li>
+                 <li>
+                  <p> <b>Spectator Mode</b>, atau yang biasa dikenal dengan mode penonton. Dimana kamu bisa menjelajahi dunia minecraft tanpa harus berinteraksi secara langsung di dalamnya.</p></li>
+               </ul> 
+         
+          <p> Game minecraft sangatlah kompleks dan menantang walaupun dibungkus dalam grafis yang sangat sederhana. Kamu akan menemukan efek siang dan malam pada game ini layaknya di dunia nyata. Selain itu terdapat berbagai item istimewa yang bisa diperoleh dengan eksplor dunia minecraft.</p>             
+       </article>
+                
+      </div>
+      
+      <div class="col-md-12 col-l-3 aside">
+         <aside>
+               <hr style="height: 1px" color="red"/>
+                <center>
+                 <h4>Artikel lainnya</h4>
+                  </center>
+               <hr style="height: 1px" color="red"/>
+             <p>>> <a href="artikel1.html">Apa yang dimaksud Pixel dan Resolusi</a> </p>
+             <p>>> <a href="artikel2.html">Apa itu pixel art</a> </p>
+             <p>>> <a href="artikel3.html">Cara mengubah foto atau gambar menjadi pixel art 8 bit di android</a> </p>
+             <p>>> <a href="artikel4.html">Ciri-ciri khusus game 8 bit</a> </p>
+             <p>>> <a href="artikel5.html">Perbedaan game 8 bit jadul dan modern</a> </p>
+             <p>>> <a href="artikel6.html">Cara main game PSP (PlayStation Portable) di android</a> </p>
+             <p>>> <a href="1artikel.html">Minecraft</a></p>
+         </aside>
+      </div>
+   </div>
+ </main>
+   
+   <footer>
+    <center>
+            <p> &copy; Noprogamming CV. All rights reserved.<br>Design - David Ronaldo Hutajulu </p>
+   </center>
+   </footer>
+   
+   <script>
+   function openNav() {
+   document.getElementById("nav")
+   .style.height="100%";
+   }
+   
+   function closeNav() {
+   document.getElementById("nav")
+   .style.height = "0%";
+   }
+   </script>
+   
+   <script>
+   
+   function myFunction() {
+   document.getElementById("myDropdown")
+   .classList.toggle("show");
+   }
+   
+   
+   window.onclick = function(e) {
+   if (!e.target.matches('.dropbtn')) {
+   
+   var dropdowns = document
+   .getElementsByClassName
+   ("dropdown-content");
+   
+   for (var d = 0; d < dropdowns
+   .length; d++) {
+   
+   var openDropdown = dropdowns[d];
+   if(openDropdown.classList.contains
+   ('show')){
+   
+   openDropdown.classList.remove('show');
+   
+   }
+   }
+   }
+   }
+   
+   </script>
+   
+</body>
+</html>

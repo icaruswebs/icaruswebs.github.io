@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Blogger</title>
+      <link type="image/png" href="img/8-bit-megumin.jpg" rel="icon"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+      <style type="text/css">
+      * {
+         box-sizing: border-box;
+      }
+      html, body {
+         margin: 0;
+         padding: 0;
+         font-family:Arial,sans-serif;
+         background-color: black;
+         color: black;
+      }
+      #content::after {
+         content: "";
+         display: block;
+         clear: both;
+      }
+      [class*="col-"] {
+         width: 100%;
+         float: left;
+      }
+      @media only screen and (min-width: 480px) {
+         .col-md-1 { width: 8.33333333% }
+         .col-md-2 { width: 16.66666667% }
+         .col-md-3 { width: 25% }
+         .col-md-4 { width: 33.33333333% }
+         .col-md-5 { width: 41.66666667% }
+         .col-md-6 { width: 50% }
+         .col-md-7 { width: 58.33333333% }
+         .col-md-8 { width: 66.66666667% }
+         .col-md-9 { width: 75% }
+         .col-md-10 { width: 83.33333333% }
+         .col-md-11 { width: 91.66666667% }
+         .col-md-12 { width: 100% }
+      }
+      @media only screen and (min-width: 768px) {
+         .col-l-1 { width: 8.33333333% }
+         .col-l-2 { width: 16.66666667% }
+         .col-l-3 { width: 40% }
+         .col-l-4 { width: 33.33333333% }
+         .col-l-5 { width: 41.66666667% }
+         .col-l-6 { width: 60% }
+         .col-l-7 { width: 58.33333333% }
+         .col-l-8 { width: 66.66666667% }
+         .col-l-9 { width: 75% }
+         .col-l-10 { width: 83.33333333% }
+         .col-l-11 { width: 91.66666667% }
+         .col-l-12 { width: 100% }
+      }
+      /* design the layout */
+      footer {
+         color: white;
+         padding: 15px;
+      }
+      .main, .aside {
+         padding: 15px;
+      }
+      .main > article {
+         text-align: left;
+         background: black;
+         padding: 10px;
+         border: 1px solid black;
+         border-color: #FF00FF;
+      }
+      .aside > aside {
+         background: black;
+         border: 1px solid black;
+         border-radius: 5px;
+         padding: 15px;
+         border-color: #FF00FF;
+      }
+      header {
+         background: black;
+      }
+      footer {
+         background: #333333;
+      }
+      
+     
+       .overlay {
+       height: 0%;
+       width: 100%;
+       position: fixed;
+       z-index: 1;
+       top: 0;
+       left: 0;
+       background-color: rgb(0,0,0);
+       background-color: rgba(0,0,0,0.9);
+       overflow-y: hidden;
+       transition: 0.5s;
+       }
+       
+       .overlay-content {
+       position: relative;
+       top: 25%;
+       width: 100%;
+       text-align: center;
+       margin-top: 30px;
+       }
+       
+       .overlay a {
+       padding: 8px;
+       text-decoration: none;
+       font-size: 30px;
+       color: #818181;
+       display: block;
+       transition: 0.3s;
+       }
+       
+       .overlay a:hover, .overlay a:focus {
+       color: #f1f1f1;
+       }
+       
+       .overlay .closebtn {
+       position: absolute;
+       top: 20px;
+       right: 45px;
+       font-size: 60px;
+       }
+       
+       @media screen and (max-height: 450px){
+       .overlay {overflow-y: auto;}
+       .overlay a {font-size: 20px}
+       .overlay .closebtn {
+       font-size: 40px;
+       top: 15px;
+       right: 35px;
+       }
+       }
+             
+      img {
+         max-width: 100%;
+         height: auto;
+      }
+      
+      #img2 {
+       max-width: 50%;
+       height: auto;
+       float: left;
+      }
+      
+      #section {
+      padding: 15px;
+      color: white;
+      background: black;
+      }
+      
+      #p5 {
+         font-size: small;
+        }
+        
+       p {
+         color: #FF00FF;
+        }
+        
+       #p2 {
+       color: white;
+      }
+        
+      h3 {
+       color: white;
+      }
+        
+      a:link2 {
+         text-decoration: none;
+         color: green;
+        }
+
+  audio {
+        display:inline-table;
+       	background-color:white;
+    	max-width: 200px;
+    	padding:10px -1px 10px 5px;
+    	font-size: 20px;
+    	position: absolute center;
+	}
+	
+	a:link {
+	text-decoration: none;
+	}
+	a:visited {
+	text-decoration: none;
+	}
+	
+	.typing {
+	width: 35ch;
+	animation: typing 6s steps(30),
+	blink .5s step-end
+	infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+	font-family: monospace;
+	font-size: 13px;
+	color: #FF00FF;
+		
+	}
+	
+	@keyframes typing {
+	from{
+	width: 0;
+	}          
+	}
+	
+	@keyframes blink {
+	90%{
+	border-color: transparent;
+	}
+	}
+	
+	.box{
+	width:220px;
+	margin:10px auto;
+	position:relative;
+	border-radius:50%;
+	box-shadow:5px 10px 5px rgba(0,0,0,.5);
+	}
+	.box .box-pic{
+	position:relative;
+	transform-origin:95% 49% 0;
+	transition:all 0.6s;
+	z-index:1;
+	}
+	.box .box-pic:after
+	{
+	content:" ";
+	position:absolute;
+	top:47.5%;
+	left:90.5%;
+	width:10px;
+	height:10px;
+	background:#fff;
+	border-radius:50%;
+	box-shadow:2px 2px 3px rgba(0,0,0,1) inset; 
+	} 
+	.box .box-pic img{
+	width:220px;
+	border-radius:50%;
+	box-shadow:-2px 2px 3px rgba(0,0,0,1);
+	}
+	.box:hover .box-pic
+	{
+	transform:rotate(-140deg);      
+	}
+	.box .content{
+	text-align:center;
+	color:#fff;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:brown;
+	border-radius:50%;
+	padding:10px 20px;
+	box-sizing:border-box; 
+	letter-spacing:1px;
+	line-height:25px;
+	box-shadow:inset -3px -5px 5px rgba(0,0,0,.5);
+	
+	}
+	.box .content h3
+	{
+	border-bottom:2px solid #fff;
+	}
+	.box .content p span 
+	{
+	background:blue;
+	}
+   </style>
+</head>
+<body>
+       <script>
+       alert('  Selamat Datang di Xoupedia🙏');
+       </script>
+       
+       <script>
+        alert('Create by David Ronaldo Hutajulu ');
+       </script>
+   <header>
+      <img src="img/latarbelakang.jpg"/>
+  </header>
+  
+  <section id="section">
+      <nav>
+            <div id="nav" class="overlay">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <div class="overlay-content">
+               <a href="home.html">Home</a>
+               <a href="about.html">About</a>
+               <a href="contact.html">Contact</a>
+               <a href="terms.html">Terms of service</a>
+               <a href="privacy.html">Privacy policy</a>
+               <a href="disclaimer.html">Disclaimer</a>
+           </div>
+            </div>
+              <span style="font-size:30px;cursor:
+                pointer "onclick="openNav()">&#9776; Menu</span>
+      </nav>
+     </section>
+    
+ 
+   <main>
+    <div id="content">  
+     <div class="col-md-9 col-l-6 main">
+        <div class="header5">
+        <body bgcolor="" =><dif class='CenterDiv'><center><script>
+        farbbibliothek = new Array(); 
+        farbbibliothek[0] = new Array("#FF0000","#FF1100","#FF2200","#FF3300","#FF4400","#FF5500","#FF6600","#FF7700","#FF8800","#FF9900","#FFaa00","#FFbb00","#FFcc00","#FFdd00","#FFee00","#FFff00","#FFee00","#FFdd00","#FFcc00","#FFbb00","#FFaa00","#FF9900","#FF8800","#FF7700","#FF6600","#FF5500","#FF4400","#FF3300","#FF2200","#FF1100"); 
+        farbbibliothek[1] = new Array("#00FF00","#000000","#00FF00","#00FF00"); 
+        farbbibliothek[2] = new Array("#00FF00","#FF0000","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00"); 
+        farbbibliothek[3] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+        farbbibliothek[4] = new Array("#FF0000","#EE0000","#DD0000","#CC0000","#BB0000","#AA0000","#990000","#880000","#770000","#660000","#550000","#440000","#330000","#220000","#110000","#000000","#110000","#220000","#330000","#440000","#550000","#660000","#770000","#880000","#990000","#AA0000","#BB0000","#CC0000","#DD0000","#EE0000"); 
+        farbbibliothek[5] = new Array("#000000","#000000","#000000","#FFFFFF","#FFFFFF","#FFFFFF"); 
+        farbbibliothek[6] = new Array("#33CCFF","#33CCCC","#33CC99","#33CC66","#33CC33","#33CC00"); 
+        farbbibliothek[7] = new Array("#00dbdb","#00afdb","#0083db","#0058db","#002cdb","#2c00db","#5800db","#8300db","#af00db","#db00db"); 
+        farbbibliothek[8] = new Array("#ffd8f4","#ffcff2","#ffc6f0","#ffbded","#ffb4eb","#ffabe8","#ffa2e6","#ff99e3","#ff90e1","#ff87de","#ff7edc","#ff75d9","#ff6cd7","#ff63d5","#ff5ad3","#ff51d1","#ff48cf","#ff3fcd","#ff36cb","#ff2dc9","#ff24c7","#ff1bc5","#ff12c3","#ff09c1","#f600b8","#ed00b1","#e400aa","#db00a3","#d2009c","#c90095","#c0008e","#b70087","#ae0080","#a50079","#9c0072","#93006b","#8a0064","#81005d","#780056","#6f004f","#660048","#5d0042","#54003b","#4b0035","#42002f","#390028","#300022","#27001b"); 
+        farben = farbbibliothek[4];
+        function farbschrift() 
+        { 
+        for(var i=0 ; i<Buchstabe.length; i++) 
+        { 
+        document.all["a"+i].style.color=farben[i]; 
+        } 
+        farbverlauf(); 
+        } 
+        function string2array(text) 
+        { 
+        Buchstabe = new Array(); 
+        while(farben.length<text.length) 
+        { 
+        farben = farben.concat(farben); 
+        } 
+        k=0; 
+        while(k<=text.length) 
+        { 
+        Buchstabe[k] = text.charAt(k); 
+        k++; 
+        } 
+        } 
+        function divserzeugen() 
+        { 
+        for(var i=0 ; i<Buchstabe.length; i++) 
+        { 
+        document.write("<b><font face='jolly lodger' size='6' color='hotpink'></a><span id='a"+i+"' class='a"+i+"'>"+Buchstabe[i] + "</span></font></b>"); 
+        } 
+        farbschrift(); 
+        } 
+        var a=1; 
+        function farbverlauf() 
+        { 
+        for(var i=0 ; i<farben.length; i++) 
+        { 
+        farben[i-1]=farben[i]; 
+        } 
+        farben[farben.length-1]=farben[-1]; 
+        
+        setTimeout("farbschrift()",30); 
+        } 
+        var farbsatz=1; 
+        function farbtauscher() 
+        { 
+        farben = farbbibliothek[farbsatz]; 
+        while(farben.length<text.length) 
+        { 
+        farben = farben.concat(farben); 
+        } 
+        farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001)); 
+        } 
+       setInterval("farbtauscher()",5000); 
+        text= 'INFORMATION AND GAME';
+        </script> <span class='newclass'>
+        <script type="text/javascript">
+        string2array(text); 
+        divserzeugen();
+        </script></span>
+        </center>
+         <p id="p5">> by Blog Xoupedia</p>
+         <p id="p5">> Mei 02, 2022</p>
+         <p id="p5">> Edukasi</p>
+         <script type="text/javascript">
+         window.onload = function() { jam(); }
+         
+         function jam() {
+         var e = document.getElementById('jam'),
+         d = new Date(), h, m, s;
+         h = d.getHours();
+         m = set(d.getMinutes());
+         s = set(d.getSeconds());
+         
+         e.innerHTML = h +':'+ m +':'+ s;
+         
+         setTimeout('jam()', 1000);
+         }
+         
+         function set(e) {
+         e = e < 10 ? '0'+ e : e;
+         return e;
+         }
+         </script>
+         <center>
+         <tt>
+         <h2 style="font-size: 30px; color: #89C3D0; " id="jam"> </h2>
+         </tt>
+         </center>
+         </div>
+         
+       <center>
+               <div class="typing">
+             &#128526; Welcome to My Blogger Xoupedia!
+               </div>
+       </center>
+       
+      <center>
+   <audio id="player" autoplay loop>
+   <source src="audio/LittlerootTown.mp3" type="audio/mp3">
+   </audio>
+  </center>
+      <hr>
+   <br>
+     
+         <article>
+              <img id="img2" src="thumbnail/G1.jpg"/>
+               <h3>Apa yang dimaksud Pixel dan Resolusi</h3> 
+                <p> Apa yang dimaksud pixel dan resolusi ? Dari pertanyaan tersebut mungkin ada beberapa dari kalian yang sudah tau kalau untuk fotografi atau <a href="artikel1.html">....lihat selengkapnya</a></p>
+         </article>
+<br>
+<br>
+         <article>
+              <img id="img2" src="thumbnail/G2.jpg"/>
+               <h3>Apa itu Pixel Art</h3>
+                <p> Dalam dunia design grafis, atau dalam bahasa awam mengenalnya dengan nama seni gambar menggambar 😆. Kita mengenal istilah yang namanya <a href="artikel2.html">....lihat selengkapnya</a></p>
+         </article>
+<br>
+<br>      
+         <article>
+              <img id="img2" src="thumbnail/G3.jpg"/>
+               <h3>Cara Mengubah Foto atau Gambar Menjadi Pixel Art 8 Bit di Android</h3>
+                <p> Untuk membuat gambar pixel art secara instan, kita hanya perlu membutuhkan sejumlah tool atau aplikasi yang menyediakan efek atau fitur yang memungkinkan untuk mengubah gambar dan foto menjadi <a href="artikel3.html">....lihat selengkapnya</a></p>
+         </article>
+<br>
+<br>       
+         <article>
+              <img id="img2" src="thumbnail/G4.jpg"/> 
+               <h3>Ciri-ciri Khusus Game 8 Bit</a></h3>
+                <p> Game 8 bit asli yang dijalankan pada konsol game berprosesor 8 bit sudah mulai musnah. Dikarenakan era ke-emasan nintendo nes, sega, dan kawan-kawannya di masa lalu yang telah berakhir <a href="artikel4.html">....lihat selengkapnya</a></p>
+         </article> 
+<br>
+<br>              
+         <article>
+              <img id="img2" src="thumbnail/G5.jpg"/>
+               <h3>Perbedaan Game 8 Bit Jadul dan Modern</h3>
+                <p> Game yang memiliki grafik dengan ciri khas gambar mozaik, berpiksel besar, dan memiliki susunan warna yang terbatas. Sebut saja game 8 <a href="artikel5.html">....lihat selengkapnya</a></p>
+         </article>
+<br>
+<br>      
+         <article>
+              <img id="img2" src="thumbnail/G6.jpg"/>
+               <h3>Cara Main Game PSP (PlayStation Portable) di Android</h3>
+                <p> PSP Merupakan konsol game genggam / handheld pertama yang hadir dalam Playstation. Dijamannya PSP (playstation portable), merupakan pesaing kuat dari konsol Nintendo <a href="artikel6.html">....lihat selengkapnya</a></p>
+        </article>
+<br>
+<br>
+         <article>
+             <img id="img2" src="thumbnail/G7.jpg"/>
+              <h3>Minecraft</h3>
+               <p> Minecraft adalah sebuah permainan sandbox yang dikembangkan oleh pengembang permainan asal<a href="1artikel.html">....lihat selengkapnya</a></p>
+        </article>
+                        
+    </div>
+    
+    <div class="col-md-12 col-l-3 aside">
+    <aside>
+    <hr style="height: 1px" color="red"/>
+    <center>
+    <h3>MEDIA SOSIAL</h3>
+    </center>
+    <hr style="height: 1px" color="red"/>
+    <p>>> <a class="social-media-icon" href="https://m.facebook.com/david.noprogamming.3"><span class="fab fa-facebook"> Facebook</span></a> </p>
+    <p>>> <a class="social-media-icon" href="https://www.instagram.com/david_noprogaming/"><span class="fab fa-instagram"> Instagram</span></a> </p>
+    <p>>> <a class="social-media-icon" href="https://link_social_mendia_anda"><span class="fab fa-github"> Github</span></a>
+ 
+   <div class="box">
+   <div class="box-pic" >
+   <img src="img/20220626_195320.jpg">
+   </div>
+   
+   <div class="content">
+   <h3>GIFT</h3>
+   <p>Nikmati Sensasi Web_Chat_Bot<br>tekan link dibawah<br><a href="bot.html"><button>Bot Chat</a></button></p>
+   </div>
+   </div>
+ 
+    </aside>
+     </div>
+    
+   </div>
+ </main>
+   
+   <footer>
+    <center>
+            <p id="p2"> &copy; Noprogamming CV. All rights reserved.<br>Design - David Ronaldo Hutajulu </p>
+   </center>
+   </footer>
+   
+   <script>
+   function openNav() {
+   document.getElementById("nav")
+   .style.height="100%";
+   }
+   
+   function closeNav() {
+   document.getElementById("nav")
+   .style.height = "0%";
+   }
+   </script>
+   
+   <script>
+   
+   function myFunction() {
+   document.getElementById("myDropdown")
+   .classList.toggle("show");
+   }
+   
+   
+   window.onclick = function(e) {
+   if (!e.target.matches('.dropbtn')) {
+   
+   var dropdowns = document
+   .getElementsByClassName
+   ("dropdown-content");
+   
+   for (var d = 0; d < dropdowns
+   .length; d++) {
+   
+   var openDropdown = dropdowns[d];
+   if(openDropdown.classList.contains
+   ('show')){
+   
+   openDropdown.classList.remove('show');
+   
+   }
+   }
+   }
+   }
+   
+   </script>
+   
+</body>
+</html>

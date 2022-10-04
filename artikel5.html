@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link type="image/png" href="img/8-bit-megumin.jpg" rel="icon">
+      <title>Blogger</title>
+      <style type="text/css">
+      * {
+         box-sizing: border-box;
+      }
+      html, body {
+         margin: 0;
+         padding: 0;
+         font-family:Arial,sans-serif;
+         background: linear-gradient(#9932CC, #5F9EA0, #00BFFF, #9932CC) ;
+      }
+      #content::after {
+         content: "";
+         display: block;
+         clear: both;
+      }
+      [class*="col-"] {
+         width: 100%;
+         float: left;
+      }
+      @media only screen and (min-width: 480px) {
+         .col-md-1 { width: 8.33333333% }
+         .col-md-2 { width: 16.66666667% }
+         .col-md-3 { width: 25% }
+         .col-md-4 { width: 33.33333333% }
+         .col-md-5 { width: 41.66666667% }
+         .col-md-6 { width: 50% }
+         .col-md-7 { width: 58.33333333% }
+         .col-md-8 { width: 66.66666667% }
+         .col-md-9 { width: 75% }
+         .col-md-10 { width: 83.33333333% }
+         .col-md-11 { width: 91.66666667% }
+         .col-md-12 { width: 100% }
+      }
+      @media only screen and (min-width: 768px) {
+         .col-l-1 { width: 8.33333333% }
+         .col-l-2 { width: 16.66666667% }
+         .col-l-3 { width: 40% }
+         .col-l-4 { width: 33.33333333% }
+         .col-l-5 { width: 41.66666667% }
+         .col-l-6 { width: 60% }
+         .col-l-7 { width: 58.33333333% }
+         .col-l-8 { width: 66.66666667% }
+         .col-l-9 { width: 75% }
+         .col-l-10 { width: 83.33333333% }
+         .col-l-11 { width: 91.66666667% }
+         .col-l-12 { width: 100% }
+      }
+      /* design the layout */
+      footer {
+         color: white;
+         padding: 15px;
+      }
+      .main, .aside {
+         padding: 15px;
+      }
+      .main > article {
+         text-align: left;
+         background: white;
+         padding: 10px;
+         border: 1px solid black;
+      }
+      .aside > aside {
+         background: #89C3D0;
+         border: 1px solid black;
+         border-radius: 5px;
+         padding: 15px;
+      }
+      header {
+         background: black;
+      }
+      footer {
+         background: #333333;
+      }
+      
+     
+       .overlay {
+       height: 0%;
+       width: 100%;
+       position: fixed;
+       z-index: 1;
+       top: 0;
+       left: 0;
+       background-color: rgb(0,0,0);
+       background-color: rgba(0,0,0,0.9);
+       overflow-y: hidden;
+       transition: 0.5s;
+       }
+       
+       .overlay-content {
+       position: relative;
+       top: 25%;
+       width: 100%;
+       text-align: center;
+       margin-top: 30px;
+       }
+       
+       .overlay a {
+       padding: 8px;
+       text-decoration: none;
+       font-size: 30px;
+       color: #818181;
+       display: block;
+       transition: 0.3s;
+       }
+       
+       .overlay a:hover, .overlay a:focus {
+       color: #f1f1f1;
+       }
+       
+       .overlay .closebtn {
+       position: absolute;
+       top: 20px;
+       right: 45px;
+       font-size: 60px;
+       }
+       
+       @media screen and (max-height: 450px){
+       .overlay {overflow-y: auto;}
+       .overlay a {font-size: 20px}
+       .overlay .closebtn {
+       font-size: 40px;
+       top: 15px;
+       right: 35px;
+       }
+       }
+             
+      img {
+         max-width: 100%;
+         height: auto;
+
+      }
+      
+      #section {
+      padding: 15px;
+      color: white;
+      background: black;
+      }
+      
+      #p5 {
+         font-size: small;
+        }
+        
+      a:link {
+        text-decoration: none;
+        }
+      a:visited {
+        text-decoration: none;
+        }
+
+   </style>
+</head>
+<body>
+   <header>
+      <img src="img/latarbelakang.jpg"/>
+  </header>
+  
+  <section id="section">
+      <nav>
+            <div id="nav" class="overlay">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <div class="overlay-content">
+               <a href="home.html">Home</a>
+               <a href="about.html">About</a>
+               <a href="contact.html">Contact</a>
+               <a href="terms.html">Terms of service</a>
+               <a href="privacy.html">Privacy policy</a>
+               <a href="disclaimer.html">Disclaimer</a>
+           </div>
+            </div>
+              <span style="font-size:30px;cursor:
+                pointer "onclick="openNav()">&#9776; Menu</span>
+      </nav>
+     </section>
+    
+   <main>
+    <div id="content">
+      <div class="col-md-9 col-l-6 main">
+       <article>
+        <center>
+         <h1> Perbedaan Game 8 Bit Jadul dan Modern </h1>
+          </center>
+         <p id="p5">> by Blog Xoupedia</p>
+         <p id="p5">> Mei 02, 2022</p>
+         <p id="p5">> Edukasi</p>
+      <hr>
+   <br>
+       <center>
+        <img src="img/8-bit-megumin.jpg">
+       </center>
+         <p> Game yang memiliki grafik dengan ciri khas gambar mozaik, berpiksel besar, dan memiliki susunan warna yang terbatas. Sebut saja game 8 bit atau game yang menggunakan berbagai jenis sprite berbasis pixel art. Hal ini terkadang cukup menuai pro dan kontra di kalangan para gamer. Terutama dikalangan gamer generasi sekarang yang lebih mengutamakan grafik game yang hd, dibandingkan dengan gameplay.</p>
+          <p> Hal yang seperti demikian bisa kita temukan didalam berbagai jenis komentar yang ada di media sosial. Banyak orang yang mengakunya gamer, yang selalu saja menghina grafik game yang tidak terlalu bagus. Dan menyebut game tersebut sebagai game 8 bit. Sebagai contoh korban dari ejekan para netizen ini tentu misalnya adalah game free fire dan mobile legends.</p>
+       </article>
+       
+    <br>
+    
+       <article>
+         <h3>Apakah Game Berbasis Pixel Art dapat disebut Sebagai Game 8 Bit ?</h3>
+            <p> Muncul sebuah pertanyaan unik di benak kita. <u>Apakah game yang memiliki grafik jelek dapat disebut sebagai game 8 bit ?</u>. Jawabannya tentulah tidak, karena jika yang dimaksud dengan game 8 bit adalah style game dengan ciri khas game konsol jadul ala nintendo nes dan sega di masa lalu. Maka game seperti mobile legend, free fire dan teman-temannya sama sekali tidak dapat disebut sebagai game 8 bit.</p>
+             <p> Karena ciri khas dari game 8 bit yang sesuai dengan gaya game retro, di haruskan memiliki grafik game bergaya pixel art. Baik itu game 2D maupun game 3D.</p>
+              <p> selanjutnya <u>Apakah game berbasis pixel art dapat disebut sebagai game 8 bit ?</u>. Jawaban dari pertanyaan ini ada dua, yaitu:</p>
+              
+         <ul>
+            <li> <h4>Game 8 bit berdasarkan style / art</h4>
+                  <p> Jika berdasarkan gaya atau style berbasis pixel art. Maka game yang menggunakan grafik pixel ini dapat disebut sebagai game 8 bit. Tidak peduli game tersebut dirilis di platform dan konsol apa saja, baik itu game 2D maupun game 3D.</p>
+            </li>
+            <li> <h4>Game 8 bit berdasarkan prosesor</h4>
+                  <p> Jika yang dimaksud sebagai game jadul yang dijalankan pada konsol berprosesor 8 bit. Seperti berbagai jenis game di konsol nes, famicom, dan sega sms. Maka game berbasis pixel art di era modern ini tidak bisa disebut sebagai game 8 bit.</p>
+            </li>
+         </ul>  
+       </article>
+       
+    <br>
+       
+       <article>
+         <h3>Apakah Game 8 Bit Jadul Sama dengan Game 8 Bit Modern ?</h3>
+            <p> Jika didasarkan pada cara pembuatan, penggunaan dan penempatan game. Maka game 8 bit jadul sama sekali tidak bisa disamakan dengan game yang memiliki art bergaya pixel di zaman modern. Hal ini dikarenakan adanya perbedaan didalam masalah mesin prosesor pada konsol game yang digunakan.</p>
+              <p> Sebut saja misalnya jika game super mario bros nes disebut sebagai game jadul 8 bit, maka game pixel dungeon, minecraft maupun game terraria di hp android tidak bisa disebut sebagai game 8 bit.</p>     
+        </article> 
+        
+    <br>
+    
+       <article>
+         <h3>Basis Penggemar Game Berbasis 8 Bit</h3>
+            <p> <u>Apakah masih ada peminat dan penikmat game bergaya retro ala konsol jadul ?</u>. Jika hal ini yang anda tanyakan, tentu sangatlah banyak. Karena orang tua kita, yang lahir pada era tahun 70-90 an masih sangat merindukan dan ingin bernostalgia dengan gaya game klasik jadul. Sebut saja misalnya seperti game sonic, tetris, super mario bros, bomberman, tank 1990, twin bee, ninja gaiden, excite bike, dan sejenisnya. Berbagai jenis retro game yang ada masih banyak memiliki peminat.</p>
+             <p> Dan faktanya peminat retro game ini bukan hanya didominasi oleh kalangan orang tua, bahkan anak muda pun banyak yang menyukai style dan art game berbasis pixel art ini. Apalagi dengan nuansa musik retro / chiptune yang melegenda. Pastinya masih sangat banyak peminatnya.</p>
+       </article>
+       
+    <br>
+     
+       <article>
+         <h3>Apakah Game 8 Bit Masih Memiliki Masa Depan yang Cerah ?</h3>
+            <p> Sudah terbukti adanya game berbasis pixel art ini. Sebut saja seperti game minecraft, super mario bros, tetris dan teman-temannya merajai angka penjualan game hingga detik ini. Dan game bergaya retro ini terbukti mengalahkan berbagai jenis pesaing yang mengusung tema game berbasis modern. Baik itu misalnya seperti game battle royale 3D, game fps, game open world, mmorpg dan sebagainya.</p>
+             <p> Jadi, bagi para pengembang game tidak perlu khawatir kehilangan pasar penjualan game berbasis pixel art. Karena game ini masih memiliki potensi penjualan yang sangat besar.</p>
+       </article>
+                
+      </div>
+      
+      <div class="col-md-12 col-l-3 aside">
+         <aside>
+               <hr style="height: 1px" color="red"/>
+                <center>
+                 <h4>Artikel lainnya</h4>
+                  </center>
+               <hr style="height: 1px" color="red"/>
+             <p>>> <a href="artikel1.html">Apa yang dimaksud Pixel dan Resolusi</a> </p>
+             <p>>> <a href="artikel2.html">Apa itu pixel art</a> </p>
+             <p>>> <a href="artikel3.html">Cara mengubah foto atau gambar menjadi pixel art 8 bit di android</a> </p>
+             <p>>> <a href="artikel4.html">Ciri-ciri khusus game 8 bit</a> </p>
+             <p>>> <a href="artikel5.html">Perbedaan game 8 bit jadul dan modern</a> </p>
+             <p>>> <a href="artikel6.html">Cara main game PSP (PlayStation Portable) di android</a> </p>
+             <p>>> <a href="1artikel.html">Minecraft</a> </p>
+         </aside>
+      </div>
+   </div>
+ </main>
+   
+   <footer>
+    <center>
+            <p> &copy; Noprogamming CV. All rights reserved.<br>Design - David Ronaldo Hutajulu </p>
+   </center>
+   </footer>
+   
+   <script>
+   function openNav() {
+   document.getElementById("nav")
+   .style.height="100%";
+   }
+   
+   function closeNav() {
+   document.getElementById("nav")
+   .style.height = "0%";
+   }
+   </script>
+   
+   <script>
+   
+   function myFunction() {
+   document.getElementById("myDropdown")
+   .classList.toggle("show");
+   }
+   
+   
+   window.onclick = function(e) {
+   if (!e.target.matches('.dropbtn')) {
+   
+   var dropdowns = document
+   .getElementsByClassName
+   ("dropdown-content");
+   
+   for (var d = 0; d < dropdowns
+   .length; d++) {
+   
+   var openDropdown = dropdowns[d];
+   if(openDropdown.classList.contains
+   ('show')){
+   
+   openDropdown.classList.remove('show');
+   
+   }
+   }
+   }
+   }
+   
+   </script>
+   
+</body>
+</html>

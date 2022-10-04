@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link type="image/png" href="img/8-bit-megumin.jpg" rel="icon">
+      <title>Blogger</title>
+      <style type="text/css">
+      * {
+         box-sizing: border-box;
+      }
+      html, body {
+         margin: 0;
+         padding: 0;
+         font-family:Arial,sans-serif;
+         background-color: black;
+      }
+      #content::after {
+         content: "";
+         display: block;
+         clear: both;
+      }
+      [class*="col-"] {
+         width: 100%;
+         float: left;
+      }
+      @media only screen and (min-width: 480px) {
+         .col-md-1 { width: 8.33333333% }
+         .col-md-2 { width: 16.66666667% }
+         .col-md-3 { width: 25% }
+         .col-md-4 { width: 33.33333333% }
+         .col-md-5 { width: 41.66666667% }
+         .col-md-6 { width: 50% }
+         .col-md-7 { width: 58.33333333% }
+         .col-md-8 { width: 66.66666667% }
+         .col-md-9 { width: 100% }
+         .col-md-10 { width: 83.33333333% }
+         .col-md-11 { width: 91.66666667% }
+         .col-md-12 { width: 100% }
+      }
+      @media only screen and (min-width: 768px) {
+         .col-l-1 { width: 8.33333333% }
+         .col-l-2 { width: 16.66666667% }
+         .col-l-3 { width: 40% }
+         .col-l-4 { width: 33.33333333% }
+         .col-l-5 { width: 41.66666667% }
+         .col-l-6 { width: 100% }
+         .col-l-7 { width: 58.33333333% }
+         .col-l-8 { width: 66.66666667% }
+         .col-l-9 { width: 75% }
+         .col-l-10 { width: 83.33333333% }
+         .col-l-11 { width: 91.66666667% }
+         .col-l-12 { width: 100% }
+      }
+      /* design the layout */
+      footer {
+         color: white;
+         padding: 15px;
+      }
+      .main, .aside {
+         padding: 15px;
+      }
+      .main > article {
+         text-align: left;
+         padding: 10px;
+         border: 1px solid black;
+         border-radius: 5px;
+         background: black;
+         border-color: #FF00FF;
+         color:white;
+      }
+      header {
+         background: black;
+      }
+      footer {
+         background: #333333;
+      }
+      
+     
+       .overlay {
+       height: 0%;
+       width: 100%;
+       position: fixed;
+       z-index: 1;
+       top: 0;
+       left: 0;
+       background-color: rgb(0,0,0);
+       background-color: rgba(0,0,0,0.9);
+       overflow-y: hidden;
+       transition: 0.5s;
+       }
+       
+       .overlay-content {
+       position: relative;
+       top: 25%;
+       width: 100%;
+       text-align: center;
+       margin-top: 30px;
+       }
+       
+       .overlay a {
+       padding: 8px;
+       text-decoration: none;
+       font-size: 30px;
+       color: #818181;
+       display: block;
+       transition: 0.3s;
+       }
+       
+       .overlay a:hover, .overlay a:focus {
+       color: #f1f1f1;
+       }
+       
+       .overlay .closebtn {
+       position: absolute;
+       top: 20px;
+       right: 45px;
+       font-size: 60px;
+       }
+       
+       @media screen and (max-height: 450px){
+       .overlay {overflow-y: auto;}
+       .overlay a {font-size: 20px}
+       .overlay .closebtn {
+       font-size: 40px;
+       top: 15px;
+       right: 35px;
+       }
+       }
+             
+      img {
+         max-width: 100%;
+         height: auto;
+         box-shadow: 0 0 3px 3px rgba(0,0,0,.3);
+      }
+     .avatar {
+     height: 300px;
+     border-radius: 50%;
+     box-shadow: 0 0 3px 3px rgba(-1,0,0,.3);
+     border-color: white;
+     }
+     .iam {
+     font-weight: bold;
+     color: white;
+     font-size: 12px;
+     }
+     .img2 {
+     padding: 1px;
+     width: 169px;
+     }
+      
+      #section {
+      padding: 15px;
+      color: white;
+      background: black;
+      }
+      
+      #p5 {
+         font-size: small;
+         color: #FF00FF;
+        }
+        
+      a:link {
+        text-decoration: none;
+        }
+      a:visited {
+        text-decoration: none;
+        }
+     td {
+      color: white;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <img src="img/latarbelakang.jpg"/>
+  </header>
+  
+  <section id="section">
+      <nav>
+            <div id="nav" class="overlay">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <div class="overlay-content">
+               <a href="home.html">Home</a>
+               <a href="about.html">About</a>
+               <a href="contact.html">Contact</a>
+               <a href="terms.html">Terms of service</a>
+               <a href="privacy.html">Privacy policy</a>
+               <a href="disclaimer.html">Disclaimer</a>
+           </div>
+            </div>
+              <span style="font-size:30px;cursor:
+                pointer "onclick="openNav()">&#9776; Menu</span>
+      </nav>
+     </section>
+    
+   <main>
+    <div id="content">
+      <div class="col-md-9 col-l-6 main">
+       <article>
+        <center>
+         <h1> ABOUT ME </h1>
+           <img class="avatar" src="img/ProfilSaya.jpg"/>
+            <h2> <tt> <font color="#FF00FF">DAVID RONALDO HUTAJULU </font> </tt> </h2>
+            <small class="iam"> MAHASISWA STIKOM TUNAS BANGSA</small> <br>
+            <small class="iam"> JURUSAN TEKNIK INFORMATIKA</small>
+          </center>
+          
+       </article>
+       
+    <br>
+     <br>
+      <br>
+    
+       <article>
+                 <hr style="height: 2px" color="#F4A460"/>
+                 <h1> <center> <tt> A little bit about David Ronaldo Hutajulu </tt> </center> </h1>
+                 <hr style="height: 2px" color="#F4A460"/>
+                 <br>
+                 <img src="img/SAYA-picsay.jpg"/>
+                 <p id="p-1">
+                 Lahir di Pematangsiantar, salah satu Kota di Provinsi Sumatera Utara, pada <b> 08 Agustus 2001</b>. 
+                 aku adalah anak pertama dari dua bersaudara. Kota yang penuh kegembiraan dan penuh kenangan, tapi sampai 
+                 saat ini, Pematangsiantar masih menjadi rumah <code> tempat untuk pulang.</code>
+                 </p>
+                 <p>
+                 Mempelajari hal-hal baru adalah favoritku, apa lagi hal yang baru itu adalah teknologi tapi tentu saja semakin dewasa kita menjadi tahu,
+                 kemewahan itu akan terbatasi dengan kesempatan. Kata orang-orang di sekitarku, 
+                 kekuatan terbesarku ada pada sifat <em> Lemah lembut dan penurut </em> yang aku miliki. 
+                 Walaupun kata mereka juga terkadang sifat-sifat itu sedikit kurang diuntungkan karena tidak jarang bisa 
+                 digunakan pada lapangan kerja apa pun itu.
+                 </p>
+                 <p>
+                 Walaupun sangat Introvert dan sangat menikmati kesendirian dan kesunyian, 
+                 aku juga bisa menikmati dan baik dalam bekerja sama dengan orang lain, terlebih jika untuk 
+                 sesuatu yang sama-sama disukai. Sebagai pendukung rasa malasku, <i>simplicity</i> dalam menyelesaikan
+                 masalah adalah yang utama, sehingga tidak jarang aku menemukan inovasi-inovasi dalam menyelesaikan 
+                 masalah yang mungkin <i>unpopular</i> bagi sebagian orang. <br>
+                 <code>And I'm OK with that.</code> 
+                 </p>
+                <br>
+               <br>
+              <hr style="height: 2px" color="#F4A460"/>
+              <h2> <center> <tt> Biodata </tt> </center> </h2>
+              <hr style="height: 2px" color="#F4A460"/>
+              
+              <table>
+              <tr>
+              <td><b> Nama </b></td>
+              <td><b> :David Ronaldo Hutajulu </b></td>
+              </tr>
+              <tr>
+              <td><b> Tempat/Tgl Lahir </b></td>
+              <td><b> :Pematangsiantar, 08/08/2001 </b></td>
+              </tr>
+              <tr>
+              <td><b> Jenis Kelamin </b></td>
+              <td><b> :Laki - Laki </b></td>
+              </tr>
+              <tr>
+              <td><b> Agama </b></td>
+              <td><b> :Kristen Protestan </b></td>
+              </tr>
+              <tr>
+              <td><b> Kewarganegaraan </b></td>
+              <td><b> :WNI </b></td>
+              </tr>
+              
+              </table>
+       </article>
+       
+    <br>
+     <br>
+      <br>
+       
+       <article>
+                          <hr style="height: 2px" color="#F4A460"/>       
+                          <h1> 
+                          <center>
+                          <tt> Interest </tt>
+                          </center>
+                          </h1>
+                          <hr style="height: 2px" color="#F4A460"/>
+                          <br>
+                          <br>
+                          <br>
+                          
+                          <hr style="width: 200px"  color="green" />
+                          <center>
+                          <div class="img2">
+                          <img src="img/hobi1.jpg" />
+                          </div> 
+                          </center>
+                          <div class="color-green">
+                          <center>
+                          <h2> Mempelajari Teknologi </h2>
+                          </center>
+                          </div>
+                          <p> Mempelajari hal-hal teknologi adalah suatu kemewahan dan kenikmatan tersendiri bagi saya. Dengan ini wawasan dan pengetahuan saya akan terus bertambah seiring berjalannya waktu. </p>
+                          <br>
+                          
+                          <hr style="width: 200px"  color="red" />
+                          <center>
+                          <div class="img2">
+                          <img src="img/hobi2.jpg" />
+                          </div> 
+                          </center>
+                          <div class="color-red">
+                          <center>
+                          <h2> Menonton Film </h2>
+                          </center>
+                          </div>
+                          <p> Moodbooster paling murah. Semua genre film, tv series, dan juga animasi saya sukai selama ceritanya menarik. Sangat membantu dalam meningkatkan kemampuan bahasa asing saya, terutama bahasa inggris. </p>
+                          <br>
+                          
+                          <hr style="width: 200px"  color="yellow" />
+                          <center>
+                          <div class="img2">
+                          <img src="img/hobi3.jpg" />
+                          </div> 
+                          </center>
+                          <div class="color-yellow">
+                          <center>
+                          <h2> Menulis </h2>
+                          </center>
+                          </div>
+                          <p> Suka menulis apa saja yang bisa ditulis. Mulai dari Kode yang paling utama, sampai cerpen dan novel. Menulis adalah salah satu cara saya meluapkan segala bentuk emosi dalam diri. </p>
+                          <br>
+                          
+                          <hr style="width: 200px"  color="pink" />
+                          <center>
+                          <div class="img2">
+                          <img src="img/hobi4.jpg" />
+                          </div> 
+                          </center>
+                          <div class="color-pink">
+                          <center>
+                          <h2> Traveling </h2>
+                          </center>
+                          </div>
+                          <p> Sering pergi ketempat-tempat baru terutama yang belum popular dan tidak banyak orang, untuk mencari inspirasi, menikmati ketenangan, atau sekedar melepaskan stress akibat rutinitas. </p>  
+           
+        </article>            
+      </div>
+   </div>
+ </main>
+   
+   <footer>
+    <center>
+            <p> &copy; Noprogamming CV. All rights reserved.<br>Design - David Ronaldo Hutajulu </p>
+   </center>
+   </footer>
+   
+   <script>
+   function openNav() {
+   document.getElementById("nav")
+   .style.height="100%";
+   }
+   
+   function closeNav() {
+   document.getElementById("nav")
+   .style.height = "0%";
+   }
+   </script>
+   
+</body>
+</html>

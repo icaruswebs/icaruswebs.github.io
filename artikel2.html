@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link type="image/png" href="img/8-bit-megumin.jpg" rel="icon">
+      <title>Blogger</title>
+      <style type="text/css">
+      * {
+         box-sizing: border-box;
+      }
+      html, body {
+         margin: 0;
+         padding: 0;
+         font-family:Arial,sans-serif;
+         background: linear-gradient(#9932CC, #5F9EA0, #00BFFF, #9932CC) ;
+      }
+      #content::after {
+         content: "";
+         display: block;
+         clear: both;
+      }
+      [class*="col-"] {
+         width: 100%;
+         float: left;
+      }
+      @media only screen and (min-width: 480px) {
+         .col-md-1 { width: 8.33333333% }
+         .col-md-2 { width: 16.66666667% }
+         .col-md-3 { width: 25% }
+         .col-md-4 { width: 33.33333333% }
+         .col-md-5 { width: 41.66666667% }
+         .col-md-6 { width: 50% }
+         .col-md-7 { width: 58.33333333% }
+         .col-md-8 { width: 66.66666667% }
+         .col-md-9 { width: 75% }
+         .col-md-10 { width: 83.33333333% }
+         .col-md-11 { width: 91.66666667% }
+         .col-md-12 { width: 100% }
+      }
+      @media only screen and (min-width: 768px) {
+         .col-l-1 { width: 8.33333333% }
+         .col-l-2 { width: 16.66666667% }
+         .col-l-3 { width: 40% }
+         .col-l-4 { width: 33.33333333% }
+         .col-l-5 { width: 41.66666667% }
+         .col-l-6 { width: 60% }
+         .col-l-7 { width: 58.33333333% }
+         .col-l-8 { width: 66.66666667% }
+         .col-l-9 { width: 75% }
+         .col-l-10 { width: 83.33333333% }
+         .col-l-11 { width: 91.66666667% }
+         .col-l-12 { width: 100% }
+      }
+      /* design the layout */
+      footer {
+         color: white;
+         padding: 15px;
+      }
+      .main, .aside {
+         padding: 15px;
+      }
+      .main > article {
+         text-align: left;
+         background: white;
+         padding: 10px;
+         border: 1px solid black;
+      }
+      .aside > aside {
+         background: #89C3D0;
+         border: 1px solid black;
+         border-radius: 5px;
+         padding: 15px;
+      }
+      header {
+         background: black;
+      }
+      footer {
+         background: #333333;
+      }
+      
+     
+       .overlay {
+       height: 0%;
+       width: 100%;
+       position: fixed;
+       z-index: 1;
+       top: 0;
+       left: 0;
+       background-color: rgb(0,0,0);
+       background-color: rgba(0,0,0,0.9);
+       overflow-y: hidden;
+       transition: 0.5s;
+       }
+       
+       .overlay-content {
+       position: relative;
+       top: 25%;
+       width: 100%;
+       text-align: center;
+       margin-top: 30px;
+       }
+       
+       .overlay a {
+       padding: 8px;
+       text-decoration: none;
+       font-size: 30px;
+       color: #818181;
+       display: block;
+       transition: 0.3s;
+       }
+       
+       .overlay a:hover, .overlay a:focus {
+       color: #f1f1f1;
+       }
+       
+       .overlay .closebtn {
+       position: absolute;
+       top: 20px;
+       right: 45px;
+       font-size: 60px;
+       }
+       
+       @media screen and (max-height: 450px){
+       .overlay {overflow-y: auto;}
+       .overlay a {font-size: 20px}
+       .overlay .closebtn {
+       font-size: 40px;
+       top: 15px;
+       right: 35px;
+       }
+       }
+             
+      img {
+         max-width: 100%;
+         height: auto;
+
+      }
+      
+      #section {
+      padding: 15px;
+      color: white;
+      background: black;
+      }
+      
+      #p5 {
+         font-size: small;
+        }
+        
+      a:link {
+        text-decoration: none;
+        }
+      a:visited {
+        text-decoration: none;
+        }
+
+   </style>
+</head>
+<body>
+   <header>
+      <img src="img/latarbelakang.jpg"/>
+  </header>
+  
+  <section id="section">
+      <nav>
+            <div id="nav" class="overlay">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <div class="overlay-content">
+               <a href="home.html">Home</a>
+               <a href="about.html">About</a>
+               <a href="contact.html">Contact</a>
+               <a href="terms.html">Terms of service</a>
+               <a href="privacy.html">Privacy policy</a>
+               <a href="disclaimer.html">Disclaimer</a>
+           </div>
+            </div>
+              <span style="font-size:30px;cursor:
+                pointer "onclick="openNav()">&#9776; Menu</span>
+      </nav>
+     </section>
+    
+   <main>
+    <div id="content">
+      <div class="col-md-9 col-l-6 main">
+       <article>
+        <center>
+         <h1> Apa itu Pixel Art </h1>
+          </center>
+         <p id="p5">> by Blog Xoupedia</p>
+         <p id="p5">> Mei 02, 2022</p>
+         <p id="p5">> Edukasi</p>
+      <hr>
+   <br>
+         <p> Dalam dunia design grafis, atau dalam bahasa awam mengenalnya dengan nama seni gambar menggambar 😆. Kita mengenal istilah yang namanya "Pixel art". 
+             Pixel art ini sangat luas pengaplikasiannya. Baik dalam bidang seni, gaming, bisnis, jual beli, nft, dll. Karya seni pixel art ini banyak diminati. </p>
+              <center>
+              <img src="img/G1.jpeg"/>
+             </center>
+         <p> Dalam era modern seperti sekarang, karya seni pixel art ini banyak dibuat melalui berbagai jenis tools gambar di komputer dan smartphone. Ya bisa dibilang <b>digital art</b> begitulah. Kamu bisa membuat pixel art dengan bantuan software seperti gimp, ms paint, photoshop, dan berbagai app khusus lain buat membuat pixel art. Di android misalnya, banyak jenis aplikasi yang bisa kamu coba. </p>
+         
+              
+       </article>
+       
+    <br>
+    
+       <article>
+         <h3>Pengertian Pixel Art</h3>
+           <center>
+          <img src="img/G2.jpeg"/>
+           </center>
+            <p> Pixel art merupakan sebuah karya seni, umumnya seni digital yang dibuat dengan bantuan software. Dimana dalam teknik penggambarannya menampilkan elemen piksel dalam gambar secara sengaja. Sehingga grafis gambar yang dihasilkan nampak terlihat seperti penggambaran karakter game pada konsol 8-16 bit di masa lalu. Yang mana grafis gambar pixel art nampak kotak-kotak, dengan jumlah warna yang terbatas.</p>
+             <p> Tidak seperti zaman dahulu pada era keemasan game 8-16 bit, dan konsol jadul lainnya. Seperti halnya pada konsol game nes, snes, sega, gbc, gba, dll. Di era modern sekarang, dalam dunia gaming umum kita temui grafis game yang sangat canggih. 3D, penuh realitas dan sejumlah efek yang meriah. Jarang yang menggunakan grafis pixel.</p>
+              <p> Akan tetapi, dibalik hal tersebut. Ternyata banyak orang yang masih mempertahankan seni gambar piksel ini. Dan dari sinilah lahir para artist tukang gambar pixel art (pixel artists). Dari buah karya seni gambar piksel, dapat melahirkan banyak produk yang top bangets. Terutama dalam dunia gaming, industri pixel game atau game 8 bit ini masih laris di pasaran. Kamu tahu kan dengan game pixel seperti minecraft, terraria, undertale, guardian tales, dan sebagainya. Game bertema pixel art tersebut sangat sukses dipasaran, dan banyak dimainkan oleh gamer.</p>
+       </article>
+       
+    <br>
+       
+       <article>
+         <h3>Cara Menggambar Pixel Art</h3>
+        <center>
+          <img src="img/G3.jpeg"/>
+        </center>
+            <p> Hal yang pertama harus kamu miliki didalam membuat gambar piksel adalah aplikasi buat menggambar pixel art itu sendiri. Sebagai contoh ada di os android. Ada banyak aplikasi gambar pixel art yang ada. Sepertihalnya ada app pixel studio, 8 bit painter, dll.</p>
+            <p> Untuk teknik penggambaran pixel art cukup simpel. Tinggal buat saja garis, lengkungan, buat coretan gambar per pixel, ngefill warna, dan seterusnya dengan pixel gambar yang besar. Maka sudah jadilah gambar pixel art. Kalau sudah pro, pasti nanti pixel art yang dihasilkan juga akan jadi bagus. Misalnya bisa menggambar gradasi dan tekstur dengan baik. Menggunakan teknik gambar isometric, dan sebagainya. Tergantung jam terbang atau pengalaman tentunya.</p>   
+            <p> Cukup sekian saja, begitulah adanya pengertian dari pixel art. Dan perannya di zaman modern saat ini.</p>         
+        </article> 
+                
+      </div>
+      
+      <div class="col-md-12 col-l-3 aside">
+         <aside>
+               <hr style="height: 1px" color="red"/>
+                <center>
+                 <h4>Artikel lainnya</h4>
+                  </center>
+               <hr style="height: 1px" color="red"/>
+             <p>>> <a href="artikel1.html">Apa yang dimaksud Pixel dan Resolusi</a> </p>
+             <p>>> <a href="artikel2.html">Apa itu pixel art</a> </p>
+             <p>>> <a href="artikel3.html">Cara mengubah foto atau gambar menjadi pixel art 8 bit di android</a> </p>
+             <p>>> <a href="artikel4.html">Ciri-ciri khusus game 8 bit</a> </p>
+             <p>>> <a href="artikel5.html">Perbedaan game 8 bit jadul dan modern</a> </p>
+             <p>>> <a href="artikel6.html">Cara main game PSP (PlayStation Portable) di android</a> </p>
+             <p>>> <a href="1artikel.html">Minecraft</a> </p>
+         </aside>
+      </div>
+   </div>
+ </main>
+   
+   <footer>
+    <center>
+            <p> &copy; Noprogamming CV. All rights reserved.<br>Design - David Ronaldo Hutajulu </p>
+   </center>
+   </footer>
+   
+   <script>
+   function openNav() {
+   document.getElementById("nav")
+   .style.height="100%";
+   }
+   
+   function closeNav() {
+   document.getElementById("nav")
+   .style.height = "0%";
+   }
+   </script>
+   
+   <script>
+   
+   function myFunction() {
+   document.getElementById("myDropdown")
+   .classList.toggle("show");
+   }
+   
+   
+   window.onclick = function(e) {
+   if (!e.target.matches('.dropbtn')) {
+   
+   var dropdowns = document
+   .getElementsByClassName
+   ("dropdown-content");
+   
+   for (var d = 0; d < dropdowns
+   .length; d++) {
+   
+   var openDropdown = dropdowns[d];
+   if(openDropdown.classList.contains
+   ('show')){
+   
+   openDropdown.classList.remove('show');
+   
+   }
+   }
+   }
+   }
+   
+   </script>
+   
+</body>
+</html>

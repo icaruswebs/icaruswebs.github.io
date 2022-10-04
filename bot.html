@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link type="image/png" href="img/8-bit-megumin.jpg" rel="icon">
+      <title>Blogger</title>
+      <style type="text/css">
+      * {
+         box-sizing: border-box;
+      }
+      html, body {
+         margin: 0;
+         padding: 0;
+         font-family:Arial,sans-serif;
+         background-color: black;
+      }
+      #content::after {
+         content: "";
+         display: block;
+         clear: both;
+      }
+      [class*="col-"] {
+         width: 100%;
+         float: left;
+      }
+      @media only screen and (min-width: 480px) {
+         .col-md-1 { width: 8.33333333% }
+         .col-md-2 { width: 16.66666667% }
+         .col-md-3 { width: 25% }
+         .col-md-4 { width: 33.33333333% }
+         .col-md-5 { width: 41.66666667% }
+         .col-md-6 { width: 50% }
+         .col-md-7 { width: 58.33333333% }
+         .col-md-8 { width: 66.66666667% }
+         .col-md-9 { width: 100% }
+         .col-md-10 { width: 83.33333333% }
+         .col-md-11 { width: 91.66666667% }
+         .col-md-12 { width: 100% }
+      }
+      @media only screen and (min-width: 768px) {
+         .col-l-1 { width: 8.33333333% }
+         .col-l-2 { width: 16.66666667% }
+         .col-l-3 { width: 40% }
+         .col-l-4 { width: 33.33333333% }
+         .col-l-5 { width: 41.66666667% }
+         .col-l-6 { width: 100% }
+         .col-l-7 { width: 58.33333333% }
+         .col-l-8 { width: 66.66666667% }
+         .col-l-9 { width: 75% }
+         .col-l-10 { width: 83.33333333% }
+         .col-l-11 { width: 91.66666667% }
+         .col-l-12 { width: 100% }
+      }
+      /* design the layout */
+      footer {
+         color: white;
+         padding: 15px;
+      }
+      .main, .aside {
+         padding: 15px;
+      }
+      .main > article {
+         text-align: left;
+         padding: 10px;
+         border: 1px solid black;
+         border-radius: 5px;
+         background: black;
+         border-color: #FF00FF;
+         color:white;
+      }
+      header {
+         background: black;
+      }
+      footer {
+         background: #333333;
+      }
+      
+     
+       .overlay {
+       height: 0%;
+       width: 100%;
+       position: fixed;
+       z-index: 1;
+       top: 0;
+       left: 0;
+       background-color: rgb(0,0,0);
+       background-color: rgba(0,0,0,0.9);
+       overflow-y: hidden;
+       transition: 0.5s;
+       }
+       
+       .overlay-content {
+       position: relative;
+       top: 25%;
+       width: 100%;
+       text-align: center;
+       margin-top: 30px;
+       }
+       
+       .overlay a {
+       padding: 8px;
+       text-decoration: none;
+       font-size: 30px;
+       color: #818181;
+       display: block;
+       transition: 0.3s;
+       }
+       
+       .overlay a:hover, .overlay a:focus {
+       color: #f1f1f1;
+       }
+       
+       .overlay .closebtn {
+       position: absolute;
+       top: 20px;
+       right: 45px;
+       font-size: 60px;
+       }
+       
+       @media screen and (max-height: 450px){
+       .overlay {overflow-y: auto;}
+       .overlay a {font-size: 20px}
+       .overlay .closebtn {
+       font-size: 40px;
+       top: 15px;
+       right: 35px;
+       }
+       }
+             
+      img {
+         max-width: 100%;
+         height: auto;
+         box-shadow: 0 0 3px 3px rgba(0,0,0,.3);
+      }
+     .avatar {
+     height: 300px;
+     border-radius: 50%;
+     box-shadow: 0 0 3px 3px rgba(-1,0,0,.3);
+     border-color: white;
+     }
+     .iam {
+     font-weight: bold;
+     color: white;
+     font-size: 12px;
+     }
+     .img2 {
+     padding: 1px;
+     width: 169px;
+     }
+      
+      #section {
+      padding: 15px;
+      color: white;
+      background: black;
+      }
+      
+      #p5 {
+         font-size: small;
+         color: #FF00FF;
+        }
+        
+      a:link {
+        text-decoration: none;
+        }
+      a:visited {
+        text-decoration: none;
+        }
+     td {
+      color: white;
+      }
+      
+      .top{
+      width: 100%;
+      height: 85px;
+      background: cyan;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      }
+      .top h1{
+      margin: 0;
+      font-size: 20px;
+      color: crimson;
+      text-align: center;
+      padding-top: 20px;
+      font-family: sans-serif;
+      }
+      .mid{
+      width: 100%;
+      height: 400px;
+      background: gray;
+      }
+      .mid .chat{
+      width: 100%;
+      }
+      .mid .chat h2{
+      margin: 0;
+      font-size: 15px;
+      color: #000;
+      padding:15px 2px;
+      text-align: center;
+      }
+      .mid .chat p{
+      margin: 0;
+      height: 100px;
+      font-size: 14px;
+      color:lime;
+      text-align: center;
+      background-color: gray;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      }
+      .input{
+      height:55px;
+      width: 268px;
+      overflow: hidden;
+      }
+      .input input{
+      width: 100%;
+      height: 55px;
+      outline: none;
+      border: none;
+      padding-left: 30px;
+      padding-top:0;
+      font-family: monospace;
+      font-size: 20px;
+      background: lime;
+      }
+      
+      .typing {
+      width: 30ch;
+      animation: typing 6s steps(30),
+      blink .5s step-end
+      infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      font-family: monospace;
+      font-size: 13px;
+      color: #FF00FF;
+      
+      }
+      
+      @keyframes typing {
+      from{
+      width: 0;
+      }          
+      }
+      
+      @keyframes blink {
+      90%{
+      border-color: transparent;
+      }
+      }
+      .avatar {
+      height: 115px;
+      border-radius: 50%;
+      box-shadow: 0 0 3px 3px rgba(-1,0,0,.3);
+      border-color: white;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <img src="img/latarbelakang.jpg"/>
+  </header>
+  
+  <section id="section">
+      <nav>
+            <div id="nav" class="overlay">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <div class="overlay-content">
+               <a href="home.html">Home</a>
+               <a href="about.html">About</a>
+               <a href="contact.html">Contact</a>
+               <a href="terms.html">Terms of service</a>
+               <a href="privacy.html">Privacy policy</a>
+               <a href="disclaimer.html">Disclaimer</a>
+           </div>
+            </div>
+              <span style="font-size:30px;cursor:
+                pointer "onclick="openNav()">&#9776; Menu</span>
+      </nav>
+     </section>
+    
+   <main>
+    <div id="content">
+      <div class="col-md-9 col-l-6 main">
+       <article>
+        <center>
+        <div class="box">
+        <div style="text-align: center;" class="top">
+        <h1>SELAMAT DATANG DI WEB_CHAT_BOT !</h1>
+        <center>
+        <div class="typing">
+         (Masih Uji Coba Harap Maklum)
+        </div>
+        </center>
+        </div>
+       
+        <div class="mid">
+        <div class="chat">
+        <br>
+        <img class="avatar" src="img2/logo.png">
+        <h2>Jawaban Kamu Akan dibalas<br>(harap setiap mengetik menggunakan huruf kecil) </h2>
+        <p id="chatLog">Ketik !menu Untuk Melihat List</p>
+        </div>
+        </div>
+        <div class="input">
+        <input type="text" id="userBox"onkeydown="if(event.keyCode == 13){ talk() }"placeholder="Tulis Pesan">
+        </div>
+        </div>
+          </center>
+          
+       </article>
+                   
+      </div>
+   </div>
+ </main>
+   
+   <footer>
+    <center>
+            <p> &copy; Noprogamming CV. All rights reserved.<br>Design - David Ronaldo Hutajulu </p>
+   </center>
+   </footer>
+   
+   <script>
+   function openNav() {
+   document.getElementById("nav")
+   .style.height="100%";
+   }
+   
+   function closeNav() {
+   document.getElementById("nav")
+   .style.height = "0%";
+   }
+   </script>
+   
+   <script>
+   
+   function myFunction() {
+   document.getElementById("myDropdown")
+   .classList.toggle("show");
+   }
+   
+   
+   window.onclick = function(e) {
+   if (!e.target.matches('.dropbtn')) {
+   
+   var dropdowns = document
+   .getElementsByClassName
+   ("dropdown-content");
+   
+   for (var d = 0; d < dropdowns
+   .length; d++) {
+   
+   var openDropdown = dropdowns[d];
+   if(openDropdown.classList.contains
+   ('show')){
+   
+   openDropdown.classList.remove('show');
+   
+   }
+   }
+   }
+   }
+   
+   </script>
+   
+   <script>
+   function talk(){
+   var know ={
+   "!halo":"Halo juga kawan",
+   "!menu":" ––––Selamat Datang di Bot Chat–––– <br> –––MENU CHAT––– <br>|→!halo <br> |→!intro <br>|→!dibuat_oleh <br>|→!infov   ",
+   "p":"Ucap salam yang benar njink",
+   "P":"Ucap salam yang benar njink",
+   "!intro":"Nama Ku Game Bot walau masih uji coba aku akan berguna",
+   "!dibuat_oleh":"Pencipta ku adalah <br>David Ronaldo Hutajulu",
+   "!infov":"––––Bot masih trial––-- <br><br> ----<font face='monospace' color='hotpink'>masih low responding</font></color>---- <br><br> ----<font face='fantasy' color='green'>Kata-kata belum tersedia</font></color>---- <br><br> ----<font face='cursive' color='black'>Masih ada beberapa Bug</font></color>----"
+   };
+   var user = document.getElementById('userBox').value;
+   document.getElementById('chatLog').innerHTML = user + "<br>";
+   if(user in know){
+   document.getElementById('chatLog').innerHTML = know[user] + "<br>";
+   }else{
+   document.getElementById('chatLog').innerHTML = "Kata-kata tidak terdeteksi.";
+   }
+   }
+   </script>
+   
+</body>
+</html>
